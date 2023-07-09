@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33815.320
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Decorator", "Decorator\Decorator.pyproj", "{C0FCD1A7-E3CD-47EA-9E2A-478B7C6005F4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C0FCD1A7-E3CD-47EA-9E2A-478B7C6005F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0FCD1A7-E3CD-47EA-9E2A-478B7C6005F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F032A8B4-230B-4BD4-B285-B7893B036A38}
+	EndGlobalSection
+EndGlobal
