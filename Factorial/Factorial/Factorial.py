@@ -33,3 +33,17 @@ def fib(n):
         return 1
     return fib(n-1)+fib(n-2)
 print(fib(4))
+
+
+num = int(input())
+
+def fibonacci(n):
+	#complete the recursive function
+	
+	print(0)
+	for i in range(n-1):
+		
+		print(fib(i))
+
+
+fibonacci(num)#функция которая Выводит n фибоначи чисел
