@@ -7,4 +7,4 @@ class Student:
         print(self.name+" says hi")
 
 obj = Student("John")
-obj.greet(self)
+obj.greet(self) #sipnple class with siple 
