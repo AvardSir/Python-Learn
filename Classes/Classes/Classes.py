@@ -26,7 +26,7 @@ class dog(animal):
         super().sound()
 
 Ovcharka=dog("red")
-Ovcharka.sound()
+Ovcharka.sound()# ned FUNCTIonal for SubClass
 
 class A:
     def spam(self):
