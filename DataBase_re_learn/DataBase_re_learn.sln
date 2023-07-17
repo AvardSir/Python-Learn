@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33815.320
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "DataBase_re_learn", "DataBase_re_learn\DataBase_re_learn.pyproj", "{FE712181-2ABA-45D7-B58B-22EC22D780A5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FE712181-2ABA-45D7-B58B-22EC22D780A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE712181-2ABA-45D7-B58B-22EC22D780A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F63E5702-FA35-446D-8932-6365797F39E5}
+	EndGlobalSection
+EndGlobal
