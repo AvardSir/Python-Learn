@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33815.320
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Infinite su,", "Infinite su,\Infinite su,.pyproj", "{E29454C1-6FE1-45B7-A677-C006E7877291}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E29454C1-6FE1-45B7-A677-C006E7877291}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E29454C1-6FE1-45B7-A677-C006E7877291}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {292F653C-9B78-4D26-B3F4-A3C8B9C1EDF2}
+	EndGlobalSection
+EndGlobal
