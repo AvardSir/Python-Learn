@@ -19,6 +19,6 @@ def say(noun):
 verb_dict = {
   "say": say,
 }
-
+print ("lol")
 while True:
   get_input()
