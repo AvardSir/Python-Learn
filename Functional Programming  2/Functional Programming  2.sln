@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33815.320
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Functional Programming  2", "Functional Programming  2\Functional Programming  2.pyproj", "{0A06B946-3A4E-4925-9EE2-2130556B210C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0A06B946-3A4E-4925-9EE2-2130556B210C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A06B946-3A4E-4925-9EE2-2130556B210C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1A756A67-D13B-41AC-8789-2877100F8760}
+	EndGlobalSection
+EndGlobal
