@@ -11,6 +11,7 @@ def get_input():
     noun_word = command[1]
     print (verb(noun_word))
     print ("I must do something in this day")
+print ("yes it is")
   else:
     print(verb("nothing"))
 
