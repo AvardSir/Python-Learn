@@ -10,6 +10,7 @@ def get_input():
   if len(command) >= 2:
     noun_word = command[1]
     print (verb(noun_word))
+    print ("I must do something in this day")
   else:
     print(verb("nothing"))
 
