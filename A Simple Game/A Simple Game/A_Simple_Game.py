@@ -12,6 +12,7 @@ def get_input():
     print (verb(noun_word))
     print ("I must do something in this day")
 print ("yes it is")
+print ("lol i cant fast run vs studio")
   else:
     print(verb("nothing"))
 
