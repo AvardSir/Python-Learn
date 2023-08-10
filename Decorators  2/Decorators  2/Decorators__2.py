@@ -21,6 +21,7 @@ def decor(func):
         print("***")
         func(*args, **kwargs)
         print("***")
+        print('END OF PAGE')
     return wrap
 #your code goes here
 @decor
