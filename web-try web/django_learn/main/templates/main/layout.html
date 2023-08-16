@@ -1,15 +1,30 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>{% block title %}{% endblock %}</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    {% load static %}
+    <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
 </head>
 <body>
+    <aside><!-- эт для боковой, которая не меняется части-->
+    <img src="{% static 'C:\github\C#\Learn\Python-Learn\web-try web\django_learn\main\static\main\img\9408cccaf61f2ce8198a6717dd0392addaba.jpg' %}" alt="Боковая картинка">
+        <span class="bok_pic">Beatuful pic</span>
+        <h3>for navigation</h3>
+        <!--<ul>
+            <a href=""><li><i class="fa-solid fa-house"></i>Главная</li></a>
+            <a href=""><li><i class="fa-regular fa-address-card"></i>Про нас</li></a>
+            <a href=""><li><i class="fa-regular fa-address-card"></i>Будущее</li></a>
+        </ul>
+        -->
 
-    {% block content %}
+    </aside>
+    <main><!-- эт для главной части-->
+        {% block content %}
 
-    {% endblock %}
+        {% endblock %}
+    </main>
 </body>
 </html>
