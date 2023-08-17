@@ -21,6 +21,7 @@ from django.urls import path,include
 from. import views
 
 urlpatterns = [
+    #so sad....
     path('', views.index),
     path('about', views.about),
     path('lol',views.lol)
