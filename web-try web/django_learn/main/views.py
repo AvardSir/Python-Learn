@@ -13,5 +13,6 @@ def about(request):
 
 def index (request):
     return render(request, 'main/index.html')
-def lol(request):
-    return HttpResponse("<h4>lol</h4>")
+def contact(request):
+    return render(request, 'main/contact.html')
+    #return HttpResponse("<h4>lol</h4>")
