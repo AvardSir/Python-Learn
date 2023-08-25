@@ -11,8 +11,14 @@ def about(request):
     #return HttpResponse("<h4>ЭБАУНТ РАБОТАЕТ</h4>")
     return render(request, 'main/about.html')
 
+dir={
+    'index':'Главная страница',
+    'lol':'Лол',
+    "varibales":[123,'lol','string'],
+    'dir2':{'18':'vosemdadtsat','5':'five'}
+}
 def index (request):
-    return render(request, 'main/index.html')
+    return render(request, 'main/index.html',dir)
 def contact(request):
     return render(request, 'main/contact.html')
     #return HttpResponse("<h4>lol</h4>")

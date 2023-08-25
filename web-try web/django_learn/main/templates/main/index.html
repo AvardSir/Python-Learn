@@ -10,7 +10,27 @@ MainPage
 
 
     <div class="features">
-    <h1>Главная станица</h1>
+
+{% filter upper %}
+        <h3>{% for i in varibales %}
+            <h5>{{ i|lower }}</h5>
+        {% endfor %}
+        </h3>
+
+
+        {% for i in dir2 %}
+            {% if i == '5' %}
+
+                <h5>{{ i }}</h5>
+
+
+            {% endif %}
+
+        {% endfor %}
+    {% endfilter %}
+         <h3></h3>
+        {{ dir2.18|upper }}
+    <h1>Главная станица </h1>
     <h3>Привет путник садись у очага</h3>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus aliquid at deleniti dicta dolorem, eligendi et expedita fugit ipsam ipsum, nemo obcaecati provident quae quasi quibusdam reprehenderit sed soluta!</p>
     <button class="btn btn-warning" >На страничку о нас</button>
