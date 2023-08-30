@@ -2,4 +2,4 @@ from django.shortcuts import render
 
 # Create your views here.
 def news_hone(request):
-    return render(request, 'main/contact.html')
+    return render(request, 'news/news_home.html')
