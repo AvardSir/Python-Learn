@@ -14,5 +14,5 @@ def print_graph(graphs):
     pass
 
 first_graph=graph()
-first_graph.print_graph()
+first_graph.print_graph()#tak tak
 
