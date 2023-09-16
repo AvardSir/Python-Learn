@@ -16,4 +16,6 @@ def print_graph(graphs):
 first_graph=graph()
 first_graph.print_graph()#tak tak####
 
-#voyna is bad#so bad so b#####a##########Im sick#alsi sick!also sick#SSS#LABAROTIRY#ffsffssf#im in so bad moon
+#voyna is bad#so bad so b#####a##########Im sick#alsi sick!also sick#SSS#LABAROTIRY#ffsffssf#im in so bad moon#
+
+#fuck it so bad lost 70 day steak..
