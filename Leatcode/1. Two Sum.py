@@ -55,4 +55,4 @@ def task():
         if temp in dict_taks and i!=dict_taks[temp]:
            return [i,dict_taks[temp]]
 
-print(task())
+print(task())#####
