@@ -13,8 +13,8 @@ def print_graph(graphs):
 
 first_graph=graph([1,23])
 
-first_graph.print_graph()#tak tak####
+first_graph.print_graph()#tak tak#####YEK voyna
 
 #voyna is bad#so bad so b#####a##########Im sick#alsi sick!also sick#SSS#LABAROTIRY#ffsffssf#im in so bad moon#
 
-#fuck it so bad lost 70 day steak..###So bad its in divorce
+#fuck it so bad lost 70 day steak..###So bad its in divorce###AAAA
