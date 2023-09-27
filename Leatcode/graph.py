@@ -15,12 +15,23 @@ class graph():
     def del_peac_usage_index(self,num):
         del self.graphs[num]
 
+    def del_peac_usage_path(self,A,B):
+        for i in range(len(self.graphs)):
+            if self.graphs[i][0]==A and self.graphs[i][1]==B:
+                del self.graphs[i]
+                return
+
+        print('not foun')
+
+
+
+
 
 first_graph=graph([1,23])
 first_graph.add_path([0,7])
 #tak tak#####YEK voyna
 print(first_graph.get_len())
-first_graph.del_peac(1)
+first_graph.del_peac_usage_index(1)
 first_graph.print_graph()
 
 #voyna is bad#so bad so b#####a##########Im sick#alsi sick!also sick#SSS#LABAROTIRY#ffsffssf#im in so bad moon#
