@@ -24,6 +24,7 @@ class graph():
         print('not foun')
 
 #33 Life is so good without Money
+#i lost my gf im so bad
 
 
 
