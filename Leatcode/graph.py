@@ -26,7 +26,7 @@ class graph():
 #33 Life is so good without Money
 #i lost my gf im so bad
 
-
+#not enoth time
 
 first_graph=graph([1,23])
 first_graph.add_path([0,7])
