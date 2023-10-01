@@ -25,7 +25,7 @@ class graph():
 
 #33 Life is so good without Money
 #i lost my gf im so bad
-
+#i lost my gf... it realy so hard to feel agaon..
 #not enoth time
 
 first_graph=graph([1,23])
