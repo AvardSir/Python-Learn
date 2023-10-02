@@ -55,4 +55,6 @@ def task():
         if temp in dict_taks and i!=dict_taks[temp]:
            return [i,dict_taks[temp]]
 
-print(task())##########a lost my gf what i can do later?# Ohhh  Realy im good in every litle fthon
+#print(task())##########a lost my gf what i can do later?# Ohhh  Realy im good in every litle fthon
+
+import random
