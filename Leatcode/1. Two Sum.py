@@ -58,3 +58,16 @@ def task():
 #print(task())##########a lost my gf what i can do later?# Ohhh  Realy im good in every litle fthon
 
 import random
+viborka=1000000
+sum=0
+for i in range(1,1000000):
+
+    num=random.randint(1,100)
+    if num<=63:
+        sum+=80000
+    elif num>63 and num<63+25:
+        sum+=155000
+    elif num>63+25:
+        sum+=250000
+sredne_znach=sum/viborka
+print(sredne_znach)
