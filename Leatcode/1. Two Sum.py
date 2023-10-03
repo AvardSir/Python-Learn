@@ -71,3 +71,4 @@ for i in range(1,1000000):
         sum+=250000
 sredne_znach=sum/viborka
 print(sredne_znach)
+#not today today is lab
