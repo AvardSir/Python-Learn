@@ -73,3 +73,4 @@ sredne_znach=sum/viborka
 print(sredne_znach)
 #not today today is lab
 #many big math static
+#understad what pause in Speak can Help you with More simple Understad you
