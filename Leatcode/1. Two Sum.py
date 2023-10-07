@@ -75,3 +75,4 @@ print(sredne_znach)
 #many big math static
 #understad what pause in Speak can Help you with More simple Understad you
 #not its procrastin
+# i do videios!
