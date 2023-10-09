@@ -56,23 +56,29 @@ def task():
            return [i,dict_taks[temp]]
 
 #print(task())##########a lost my gf what i can do later?# Ohhh  Realy im good in every litle fthon
+def task_of_kurs():
 
-import random
-viborka=1000000
-sum=0
-for i in range(1,1000000):
+    import random
+    viborka=1000000
+    sum=0
+    for i in range(1,1000000):
 
-    num=random.randint(1,100)
-    if num<=63:
-        sum+=80000
-    elif num>63 and num<63+25:
-        sum+=155000
-    elif num>63+25:
-        sum+=250000
-sredne_znach=sum/viborka
-print(sredne_znach)
+        num=random.randint(1,100)
+        if num<=63:
+            sum+=80000
+        elif num>63 and num<63+25:
+            sum+=155000
+        elif num>63+25:
+            sum+=250000
+    sredne_znach=sum/viborka
+    print(sredne_znach)
 #not today today is lab
 #many big math static
 #understad what pause in Speak can Help you with More simple Understad you
 #not its procrastin
 # i do videios!
+#print((4117+12)%65+1)
+string_o='word'
+
+for i in range(-len(string_o),0,1):
+    print(string_o[i])
