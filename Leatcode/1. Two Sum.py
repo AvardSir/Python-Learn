@@ -82,3 +82,5 @@ string_o='word'
 
 for i in range(-len(string_o),0,1):
     print(string_o[i])
+
+#so sad so alone
