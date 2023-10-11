@@ -84,3 +84,5 @@ for i in range(-len(string_o),0,1):
     print(string_o[i])
 
 #so sad so alone
+
+#Жизнь дана чтоб жить. И жизнь важнее програмариования? даж если умру в нищете..
