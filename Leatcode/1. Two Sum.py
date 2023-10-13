@@ -78,13 +78,17 @@ def task_of_kurs():
 #not its procrastin
 # i do videios!
 #print((4117+12)%65+1)
-string_o='word'
+def revers_print_string(string_o='word'):
 
-for i in range(-len(string_o),0,1):
-    print(string_o[i])
+    for i in range(-len(string_o),0,1):
+        print(string_o[i])
 
 #so sad so alone
 
 #Жизнь дана чтоб жить. И жизнь важнее програмариования? даж если умру в нищете..
 
 #belisimo
+def colfunc():
+    print('hello')
+
+colfunc()
