@@ -57,12 +57,14 @@ for i in range(len(lam_list)):
     NT_table.add_row([N_list[i], T_list[i], lam_list[i]])
 print(NT_table)
 
-plt.plot(lam_list, N_list)
+plt.plot(lam_list, N_list,'r--')
 plt.xlabel("Среднее количество абонентов")
 plt.ylabel("Среднее время")
 plt.show()
 
-plt.plot(lam_list, T_list)
+plt.plot(lam_list, T_list,'g-')
 plt.xlabel("Среднее количество абонентов")
 plt.ylabel("Среднее количество активных абонентов")
 plt.show()
+
+s
