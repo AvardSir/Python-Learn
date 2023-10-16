@@ -29,3 +29,4 @@ def first_in_brecket(word):
 
 word = '(){]'
 print(first_in_brecket(word))
+#Lol
