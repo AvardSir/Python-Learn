@@ -32,3 +32,4 @@ print(first_in_brecket(word))
 #Lol
 
 #yoooo
+#today i know a lot of things about mas statistics
