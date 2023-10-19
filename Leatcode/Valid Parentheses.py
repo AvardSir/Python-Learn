@@ -33,3 +33,5 @@ print(first_in_brecket(word))
 
 #yoooo
 #today i know a lot of things about mas statistics
+
+#sooo voyna so hard so touth
