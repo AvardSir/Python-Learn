@@ -35,3 +35,6 @@ print(first_in_brecket(word))
 #today i know a lot of things about mas statistics
 
 #sooo voyna so hard so touth
+
+for i in range(15,25,5):
+    print(f'{i}- эт iа я и юзаю f строку и я МОЛОДЕЦ!!!!')
