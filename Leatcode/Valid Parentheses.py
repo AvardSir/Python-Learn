@@ -38,3 +38,7 @@ print(first_in_brecket(word))
 
 for i in range(15,25,5):
     print(f'{i}- эт iа я и юзаю f строку и я МОЛОДЕЦ!!!!')
+
+print(f'{1+2}- эт три')
+dict_hut={1:'l',2:'o',3:'l'}
+print(dict_hut[1],dict_hut[2],dict_hut[3])
