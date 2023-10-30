@@ -184,3 +184,5 @@ def Build_grapichs():
 
 
 Build_grapichs()
+
+#Всем привет! обо што сегодня
