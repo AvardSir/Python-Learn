@@ -183,6 +183,13 @@ def Build_grapichs():
     plt.show()
 
 
-Build_grapichs()
+#Build_grapichs()
 
 #Всем привет! обо што сегодня
+s=''
+for i in ('i have so much power today'):
+    if i=='o':
+        #print(s.find(i))
+        print(s.index)
+    s+=i
+print(s)
