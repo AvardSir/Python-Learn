@@ -192,4 +192,19 @@ for i in ('i have so much power today'):
         #print(s.find(i))
         print(s.index)
     s+=i
-print(s)
+#print(s)
+s='batman'
+x=([i*2 for i in s])
+two_lower=''
+for i in range(0,len(x),2):
+    #print(x[i])
+
+    two_lower+=x[i]
+    #print(x[i])
+S_real_lower=''
+for i in x:
+    S_real_lower+=i[0]
+print(S_real_lower)
+#print(two_lower)
+#print(''.join(x))
+
