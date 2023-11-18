@@ -24,4 +24,21 @@ def draw_circle():
 
     turtle.done()
 
-draw_circle()
+#draw_circle()
+
+
+
+def tryandle():
+    import turtle
+    # создаем экземпляр черепашки
+    t = turtle.Turtle()
+
+    # рисуем треугольник
+    for i in range(3):
+        t.forward(100)
+        t.left(120)
+
+    # скрываем черепашку и закрываем окно по клику
+    t.hideturtle()
+    turtle.done()
+tryandle()
