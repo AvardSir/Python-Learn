@@ -29,3 +29,23 @@ sys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]
 
 sys.real_prefix = sys.prefix
 sys.prefix = base
+
+from PIL import Image, ImageDraw
+
+# Создание новой картинки
+image = Image.new('RGB', (200, 200), color = (255, 255, 255))
+
+# Создание объекта для рисования
+draw = ImageDraw.Draw(image)
+
+# Рисование прямоугольника
+draw.rectangle([50, 50, 150, 150], fill=(0, 0, 255))
+
+# Рисование круга
+draw.ellipse([100, 100, 150, 150], fill=(255, 0, 0))
+
+# Добавление текста
+draw.text((50, 10), "Hello, World!", fill=(0, 0, 0))
+
+# Сохранение картинки
+image.save('generated_image.png')
