@@ -9,11 +9,11 @@ class Window(QMainWindow):
         self.setWindowTitle("Change Color")
         self.setGeometry(100, 100, 300, 200)
 
-        self.button1 = QPushButton("Button 1", self)
+        self.button1 = QPushButton("Левый", self)
         self.button1.setGeometry(50, 50, 100, 50)
         self.button1.clicked.connect(self.change_color1)
 
-        self.button2 = QPushButton("Button 2", self)
+        self.button2 = QPushButton("Правый", self)
         self.button2.setGeometry(150, 50, 100, 50)
         self.button2.clicked.connect(self.change_color2)
 
@@ -29,8 +29,8 @@ class Window(QMainWindow):
         palette.setColor(QPalette.Window, QColor("blue"))
         self.setPalette(palette)
 
-if __name__ == "__main__":
-    app = QApplication(sys.argv)
-    window = Window()
-    window.show()
-    sys.exit(app.exec())
+
+app = QApplication(sys.argv)
+window = Window()
+window.show()
+sys.exit(app.exec())
