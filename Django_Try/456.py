@@ -21,12 +21,12 @@ class Window(QMainWindow):
 
     def change_color1(self):
         palette = self.palette()
-        palette.setColor(QPalette.Window, QColor("purple"))
+        palette.setColor(QPalette.Window, QColor("red"))
         self.setPalette(palette)
 
     def change_color2(self):
         palette = self.palette()
-        palette.setColor(QPalette.Window, QColor("green"))
+        palette.setColor(QPalette.Window, QColor("white"))
         self.setPalette(palette)
 
 
