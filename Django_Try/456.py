@@ -10,7 +10,7 @@ class Window(QMainWindow):
         self.setGeometry(100, 100, 300, 200)
 
         self.button1 = QPushButton("Левый", self)
-        self.button1.setGeometry(50, 50, 100, 50)
+        self.button1.setGeometry(25, 25, 25, 25)
         self.button1.clicked.connect(self.change_color1)
 
         self.button2 = QPushButton("Правый", self)
