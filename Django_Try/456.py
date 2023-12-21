@@ -16,14 +16,22 @@ class Window(QMainWindow):
         self.button2 = QPushButton("Правый", self)
         self.button2.setGeometry(150, 50, 100, 50)
         self.button2.clicked.connect(self.change_color2)
+        self.button2.clicked.connect(self.change_color3)
+
 
         self.default_palette = self.palette()
 
     def change_color1(self):
-        palette = self.palette()
         palette.setColor(QPalette.Window, QColor("red"))
+
+        palette = self.palette()
         self.setPalette(palette)
 
+    def change_color3(self):
+        palette.setColor(QPalette.Window, QColor("purple"))
+
+        palette = self.palette()
+        self.setPalette(palette)
     def change_color2(self):
         palette = self.palette()
         palette.setColor(QPalette.Window, QColor("white"))
