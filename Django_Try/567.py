@@ -1,41 +1,74 @@
 import pygame
-import sys
-
-# Инициализация Pygame
+import time
 pygame.init()
 
-# Определение размеров окна
-width, height = 800, 600
-screen = pygame.display.set_mode((width, height))
-pygame.display.set_caption("Игра с перемещением человечка")
+# Задаем размеры экрана
+screen_width = 800
+screen_height = 600
 
-# Загрузка изображения человечка
+# Создаем экран
+screen = pygame.display.set_mode((screen_width, screen_height))
+pygame.display.set_caption("Перемещение человечка")
+
+# Загружаем изображение человечка
 player_image = pygame.image.load("character.png")
-player_rect = player_image.get_rect()
-player_rect.center = (width // 2, height // 2)
 
-# Скорость перемещения
-speed = 5
+# Задаем начальные координаты человечка
+player_x = 100
+player_y = 100
 
-# Основной цикл игры
+# Задаем скорость перемещения человечка
+player_speed = 0.1
+
 running = True
+font = pygame.font.Font(None, 36)
+start_time = time.time()
 while running:
-    # Обработка событий
+    current_time = time.time()
+    elapsed_time = current_time - start_time
+
+    # Если прошло 5 секунд, выводим сообщение
+    if elapsed_time >= 2:
+        # Рендерим текст
+        #print('g')
+        text = font.render("Привет малыш", True, 'white')
+        text_rect = text.get_rect(center=(screen_width // 2, screen_height // 2))
+
+        # Рисуем текст на экране
+        screen.blit(text, text_rect)
+        pygame.display.update()
+
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             running = False
 
-    # Получение состояния клавиш
+    # Получаем состояние клавиш
     keys = pygame.key.get_pressed()
 
-    # Перемещение человечка
+    # Перемещаем человечка влево
     if keys[pygame.K_LEFT]:
-        player_rect.x -= speed
-    if keys[pygame.K_RIGHT]:
-        player_rect.x += speed
-    if keys[pygame.K_UP]:
-        player_rect.y -= speed
-    if keys[pygame.K_DOWN]:
-        player_rect.y += speed
+        player_x -= player_speed
 
-    # Заполнение экрана цвет
+    # Перемещаем человечка вправо
+    if keys[pygame.K_RIGHT]:
+        player_x += player_speed
+
+    # Перемещаем человечка вверх
+    if keys[pygame.K_UP]:
+        player_y -= player_speed
+
+    # Перемещаем человечка вниз
+    if keys[pygame.K_DOWN]:
+        player_y += player_speed
+
+    # Очищаем экран
+    screen.fill((0, 0, 0))
+
+    # Отрисовываем человечка на экране
+    screen.blit(player_image, (player_x, player_y))
+
+    # Обновляем экран
+    pygame.display.update()
+
+# Завершаем Pygame
+pygame.quit()
