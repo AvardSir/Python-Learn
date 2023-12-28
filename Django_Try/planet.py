@@ -30,7 +30,7 @@ class Planet:
         self.mass = mass
 
         self.orbit = []
-        self.sun = False
+        self.sun = True
         self.distance_to_sun = 0
 
         self.x_vel = 0
