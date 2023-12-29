@@ -1,74 +1,49 @@
 import pygame
-import time
+
+# Инициализация Pygame
 pygame.init()
 
-# Задаем размеры экрана
+# Размеры окна
 screen_width = 800
 screen_height = 600
 
-# Создаем экран
+# Создание окна
 screen = pygame.display.set_mode((screen_width, screen_height))
-pygame.display.set_caption("Перемещение человечка")
+pygame.display.set_caption("Простой 2D платформер")
 
-# Загружаем изображение человечка
-player_image = pygame.image.load("character.png")
+# Цвета
+WHITE = (255, 255, 255)
+BLUE = (0, 0, 255)
 
-# Задаем начальные координаты человечка
-player_x = 100
-player_y = 100
-
-# Задаем скорость перемещения человечка
+# Позиция и скорость игрока
+player_x = 50
+player_y = 50
 player_speed = 0.1
 
+# Главный игровой цикл
 running = True
-font = pygame.font.Font(None, 36)
-start_time = time.time()
 while running:
-    current_time = time.time()
-    elapsed_time = current_time - start_time
-
-    # Если прошло 5 секунд, выводим сообщение
-    if elapsed_time >= 2:
-        # Рендерим текст
-        #print('g')
-        text = font.render("Привет малыш", True, 'white')
-        text_rect = text.get_rect(center=(screen_width // 2, screen_height // 2))
-
-        # Рисуем текст на экране
-        screen.blit(text, text_rect)
-        pygame.display.update()
-
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             running = False
 
-    # Получаем состояние клавиш
+    # Получение состояния клавиш
     keys = pygame.key.get_pressed()
-
-    # Перемещаем человечка влево
     if keys[pygame.K_LEFT]:
         player_x -= player_speed
-
-    # Перемещаем человечка вправо
     if keys[pygame.K_RIGHT]:
         player_x += player_speed
-
-    # Перемещаем человечка вверх
     if keys[pygame.K_UP]:
         player_y -= player_speed
-
-    # Перемещаем человечка вниз
     if keys[pygame.K_DOWN]:
         player_y += player_speed
 
-    # Очищаем экран
-    screen.fill((0, 0, 0))
+    # Отрисовка игровых объектов
+    screen.fill(WHITE)
+    pygame.draw.rect(screen, BLUE, (player_x, player_y, 50, 50))
 
-    # Отрисовываем человечка на экране
-    screen.blit(player_image, (player_x, player_y))
+    # Обновление экрана
+    pygame.display.flip()
 
-    # Обновляем экран
-    pygame.display.update()
-
-# Завершаем Pygame
+# Выход из игры
 pygame.quit()
