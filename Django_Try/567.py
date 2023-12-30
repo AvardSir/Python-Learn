@@ -19,7 +19,7 @@ BLUE = (0, 0, 255)
 player_x = 50
 player_y = 50
 player_speed = 0.1
-
+print('yi')
 # Главный игровой цикл
 running = True
 while running:
