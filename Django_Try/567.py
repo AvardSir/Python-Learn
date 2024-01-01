@@ -27,6 +27,8 @@ while running:
         if event.type == pygame.QUIT:
             running = False
 
+print('yofk')
+
     # Получение состояния клавиш
     keys = pygame.key.get_pressed()
     if keys[pygame.K_LEFT]:
