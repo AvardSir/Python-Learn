@@ -1,5 +1,15 @@
 import pygame
 
+class Object(pygame.sprite.Sprite):
+    def __init__(self, x, y):
+        super().__init__()
+        self.image = pygame.Surface((50, 50))
+        self.image.fill((255, 0, 0))
+        self.rect = self.image.get_rect()
+        self.rect.center = (x, y)
+
+    def update(self):
+        pass
 # Инициализация Pygame
 pygame.init()
 
@@ -26,8 +36,6 @@ while running:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             running = False
-
-print('gG"G')
 
     # Получение состояния клавиш
     keys = pygame.key.get_pressed()
