@@ -16,7 +16,7 @@ pygame.init()
 # Размеры окна
 screen_width = 1200
 screen_height = 1000
-
+print('g')
 # Создание окна
 screen = pygame.display.set_mode((screen_width, screen_height))
 pygame.display.set_caption("Простой 2D платформер")
