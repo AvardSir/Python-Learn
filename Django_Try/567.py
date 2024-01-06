@@ -16,8 +16,10 @@ pygame.init()
 # Размеры окна
 screen_width = 1200
 screen_height = 1000
-print('g')
-print('gfs')
+for i in range(3):
+    print('gfs')
+
+    print('g')
 # Создание окна
 screen = pygame.display.set_mode((screen_width, screen_height))
 pygame.display.set_caption("Простой 2D платформер")
@@ -39,6 +41,7 @@ while running:
             running = False
 
     # Получение состояния клавиш
+    player_y += 0.01
     keys = pygame.key.get_pressed()
     if keys[pygame.K_LEFT]:
         player_x -= player_speed
