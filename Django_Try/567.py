@@ -33,6 +33,8 @@ player_x = 50
 player_y = 50
 player_speed = 0.1
 print('yi')
+print('yi')
+print('yi')
 # Главный игровой цикл
 running = True
 while running:
