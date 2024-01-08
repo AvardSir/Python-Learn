@@ -35,6 +35,7 @@ player_speed = 0.1
 print('yi')
 print('yi')
 print('yi')
+print('ggg')
 # Главный игровой цикл
 running = True
 while running:
