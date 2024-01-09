@@ -36,6 +36,7 @@ print('yi')
 print('yi')
 print('yi')
 print('ggg')
+print('ggg')
 # Главный игровой цикл
 running = True
 while running:
@@ -43,7 +44,7 @@ while running:
         if event.type == pygame.QUIT:
             running = False
 
-    # Получение состояния клавиш
+    # Получение сосчтояния клавиш
     player_y += 0.01
     keys = pygame.key.get_pressed()
     if keys[pygame.K_LEFT]:
