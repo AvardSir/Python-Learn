@@ -32,9 +32,12 @@ BLUE = (0, 0, 255)
 player_x = 50
 player_y = 50
 player_speed = 0.1
-print('h')
-print('h')
-print('h')
+def print_r():
+
+    print('h')
+
+    print('h')
+    print('h')
 
 # Главный игровой цикл
 running = True
