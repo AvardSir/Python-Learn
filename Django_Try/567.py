@@ -32,6 +32,9 @@ BLUE = (0, 0, 255)
 player_x = 50
 player_y = 50
 player_speed = 0.1
+class a():
+    __init__():
+        print('s')
 def print_r():
 
     print('h')
