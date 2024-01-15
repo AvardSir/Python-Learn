@@ -42,7 +42,11 @@ class a(object):
         """Constructor"""
         pass
 def print_r():
-
+    def pr():
+        print('h')
+    def pr2():
+        pr()
+        
     print('h')
 
     print('h')
