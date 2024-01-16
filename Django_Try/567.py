@@ -44,13 +44,14 @@ class a(object):
 def print_r():
     def pr():
         print('h')
+        print('h')
+
+        print('h')
+        print('h')
     def pr2():
         pr()
 
-    print('h')
 
-    print('h')
-    print('h')
 
 # Главный игровой цикл
 running = True
