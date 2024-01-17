@@ -47,6 +47,10 @@ def print_r():
         print('h')
 
         print('h')
+        print('h')print('h')
+        print('h')
+
+        print('h')
         print('h')
     def pr2():
         pr()
