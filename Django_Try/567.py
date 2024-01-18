@@ -1,3 +1,6 @@
+import random
+
+
 import pygame
 
 class Object(pygame.sprite.Sprite):
@@ -16,10 +19,23 @@ pygame.init()
 # Размеры окна
 screen_width = 1200
 screen_height = 1000
-for i in range(3):
-    print('gfs')
+class Enemy(pygame.sprite.Sprite):
+    def __init__(self):
+        super().__init__()
+        self.image = pygame.Surface((50, 50))
+        self.image.fill('red')
+        self.rect = self.image.get_rect()
+        self.rect.x = random.randint(0, screen_width - 50)
+        self.rect.y = random.randint(0, screen_height - 50)
 
-    print('g')
+enemy_group = pygame.sprite.Group()
+
+# Создание двух экземпляров врагов
+enemy1 = Enemy()
+enemy2 = Enemy()
+
+enemy_group.add(enemy1, enemy2)
+
 # Создание окна
 screen = pygame.display.set_mode((screen_width, screen_height))
 pygame.display.set_caption("Простой 2D платформер")
@@ -34,32 +50,12 @@ player_y = 50
 player_speed = 0.1
 
 
-class a(object):
-    """docstring"""
-
-    def __init__(self):
-        print('ti')
-        """Constructor"""
-        pass
-def print_r():
-    def pr():
-        print('h')
-        print('h')
-
-        print('h')
-        print('h')print('h')
-        print('h')
-
-        print('h')
-        print('h')
-    def pr2():
-        pr()
-
-
 
 # Главный игровой цикл
 running = True
 while running:
+    enemy_group.draw(screen)
+
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             running = False
