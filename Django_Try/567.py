@@ -3,6 +3,7 @@ import tkinter as tk
 def display_text():
     label.config(text="Привет, мир!")
     button.config(text="Привет, мир!")
+    button.config(text="Привет, ы!")
 # Создаем главное окно
 root = tk.Tk()
 root.title("Приложение с кнопкой")
