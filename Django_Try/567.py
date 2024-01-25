@@ -8,6 +8,6 @@ class Person:
 
 # Создаем экземпляр класса Person
 person1 = Person("Иван Лашин", 21)
-
+person2 = Person("Иван Лашин", 21)
 # Вызываем метод greet для экземпляра person1
 person1.greet()
