@@ -1,4 +1,6 @@
+print(3*(10**3)/2.8*(10**1))
 class Person:
+
 
     def __init__(self, name, age):
         self.g = '*'
