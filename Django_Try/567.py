@@ -33,7 +33,7 @@ class Body:
         print(self.hp)
         print(self.status_hp*'*')
     def udar(self,kovo_bit):
-        kovo_bit.hp-=self.uron
+        kovo_bit.hp-=(self.uron)*(self.bronya/10)
         #'*'
 Hero=Body(10,10,100)
 Evil_guy=Body(10,10,100)
