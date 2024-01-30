@@ -35,6 +35,7 @@ class Body:
     def udar(self,kovo_bit):
         kovo_bit.hp-=(self.uron)*(self.bronya/10)
         kovo_bit.hp -= (self.uron) * (self.bronya / 10)
+        kovo_bit.hp -= (self.uron) * (self.bronya / 10)kovo_bit.hp -= (self.uron) * (self.bronya / 10)
         kovo_bit.hp -= (self.uron) * (self.bronya / 10)
         #'*'
 Hero=Body(10,10,100)
