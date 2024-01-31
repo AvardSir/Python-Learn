@@ -36,7 +36,7 @@ class Body:
         kovo_bit.hp-=(self.uron)*(self.bronya/10)
         kovo_bit.hp -= (self.uron) * (self.bronya / 10)
         kovo_bit.hp -= (self.uron) * (self.bronya / 10)kovo_bit.hp -= (self.uron) * (self.bronya / 10)
-        kovo_bit.hp -= (self.uron) * (self.bronya / 10)
+        kovo_bit.hp -= (self.uron) * (self.bronya / 10) kovo_bit.hp -= (self.uron) * (self.bronya / 10)
         #'*'
 Hero=Body(10,10,100)
 Evil_guy=Body(10,10,100)
