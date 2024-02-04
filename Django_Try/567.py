@@ -35,7 +35,7 @@ class Body:
     def udar(self,kovo_bit):ч
         kovo_bit.hp-=(self.uron)*(self.bronya/10)kovo_bit.hp-=(self.uron)*(self.bronya/10)kovo_bit.hp-=(self.uron)*(self.bronya/10)kovo_bit.hp-=(self.uron)*(self.bronya/10)kovo_bit.hp-=(self.uron)*(self.bronya/10)kovo_bit.hp-=(self.uron)*(self.bronya/10)
 kovo_bit.hp-=(self.uron)*(self.bronya/10)
-kovo_bit.hp-=(self.uron)*(self.bronya/10)
+kovo_bit.hp-=(self.uron)*(self.bronya/10)kovo_bit.hp-=(self.uron)*(self.bronya/10)kovo_bit.hp-=(self.uron)*(self.bronya/10)
 
 
 
