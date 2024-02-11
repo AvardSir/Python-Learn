@@ -20,6 +20,11 @@ person1.greet()
 
 class Body:
 
+    def __init__(self, uron, bronya, max_hp):
+        self.uron = uron
+        self.bronya = bronya
+        self.max_hp = max_hp
+        self.hp = max_hp
     def __init__(self, uron, bronya,max_hp):
         self.uron = uron
         self.bronya = bronya
