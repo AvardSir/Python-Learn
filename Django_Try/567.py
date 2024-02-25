@@ -45,7 +45,7 @@ kovo_bit.hp-=(self.uron)*(123213self.bronya/10)
 
 
 kovo_bit.hp-=(self.uron)*(123213self.bronya/10)
-kovo_bit.hp-=(self.uron)*(self.bronya/10)# qoqoqo
+kovo_bit.hp-=(self.uron)*(self.bronya/10)# qoqoqo#yoyoo2
 kovo_bit.hp-=(self.uron)*(self.bronya/10)
 
 
