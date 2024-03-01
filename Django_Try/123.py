@@ -5,4 +5,18 @@
 количество_вариантов=32
 
 print((номер_группы+номер_студента_в_журнале)%количество_вариантов)#аллала
-class
+class Person:
+    # Конструктор класса
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    # Метод для вывода информации о персоне
+    def display_info(self):
+        print(f"Name: {self.name}, Age: {self.age}")
+
+# Создание объекта (экземпляра) класса Person
+person1 = Person("Alice", 30)
+
+# Вызов метода для отображения информации о персоне
+person1.display_info()
