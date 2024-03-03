@@ -9,7 +9,7 @@ def groupa():
     print((номер_группы+номер_студента_в_журнале)%количество_вариантов)#аллала
 
 groupa()
-class Person:
+class Person:#qjjj
     # Конструктор класса
     def __init__(self, listt):
         self.listt=listt
