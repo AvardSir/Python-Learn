@@ -9,14 +9,17 @@ def groupa():
     print((номер_группы+номер_студента_в_журнале)%количество_вариантов)#аллала
 
 groupa()
+
 class Person:#qjjj
-    # Конструктор класса
+
     def __init__(self, listt):
         self.listt=listt
+    def sum_list(self,lists):
+        s=0
+        for i in lists:
+           s+=i
+        return s
 
-
-
-    # Метод для вывода информации о персоне
     def out_list(self):
         for i in self.listt:
             print(i)
@@ -26,3 +29,6 @@ person1 = Person([1,23,4])
 
 # Вызов метода для отображения информации о персоне
 person1.out_list()
+
+l=[1,2,3]
+person1.sum_list(l)
