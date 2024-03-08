@@ -10,7 +10,7 @@ def groupa():
     print((номер_группы+номер_студента_в_журнале)%количество_вариантов)#аллала
 
 groupa()
-
+#алалал
 import pandas as pd
 def pandas_kill_first_colom():
 
