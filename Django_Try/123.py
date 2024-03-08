@@ -22,7 +22,7 @@ def pandas_kill_first_colom():
 
     # Удаление первого столбца
     df = df.drop(df.columns[0], axis=1)
-    print(df)
+    print(df)#dsls;l
 pandas_kill_first_colom()
 
 class Person:#qjjj#
