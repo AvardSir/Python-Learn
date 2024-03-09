@@ -11,6 +11,9 @@ def groupa():
 
 groupa()
 #алалал
+class yol:
+    __init__(self):
+        print('f')
 import pandas as pd
 def pandas_kill_first_colom():
 
