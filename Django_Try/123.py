@@ -12,8 +12,10 @@ def groupa():
 groupa()
 #алалал
 class yol:
-    __init__(self):
-        print('f')
+    def __init__(self):
+        print('g')
+
+sds= yol()
 import pandas as pd
 def pandas_kill_first_colom():
 
