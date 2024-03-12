@@ -16,7 +16,7 @@ class yol:
         print('g')
 
 sds= yol()
-import pandas as pd
+import pandas as pd#fllflf
 def pandas_kill_first_colom():
 
 
