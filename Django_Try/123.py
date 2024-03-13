@@ -29,7 +29,19 @@ def pandas_kill_first_colom():
     df = df.drop(df.columns[0], axis=1)
     print(df)#dsls;l
 pandas_kill_first_colom()
-print(f'f'f)
+def kilas():
+    import pandas as pd
+
+    # Создание примера DataFrame
+    data = {'Name': ['Alice', 'Bob', 'Charlie'],
+            'Age': [25, 30, 35],
+            'City': ['New York', 'Los Angeles', 'Chicago']}
+
+    df = pd.DataFrame(data)
+
+    # Вывод DataFrame
+    print(df)
+kilas()
 
 class Person:#qjjj#
 
