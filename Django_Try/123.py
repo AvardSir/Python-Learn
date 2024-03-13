@@ -29,7 +29,7 @@ def pandas_kill_first_colom():
     df = df.drop(df.columns[0], axis=1)
     print(df)#dsls;l
 pandas_kill_first_colom()
-def kilas():
+def kilas():#aslsl
     import pandas as pd
 
     # Создание примера DataFrame
