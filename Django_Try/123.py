@@ -31,7 +31,7 @@ def pandas_kill_first_colom():
 pandas_kill_first_colom()
 def kilas():#aslsl
     import pandas as pd
-
+#askfkk
     # Создание примера DataFrame
     data = {'Name': ['Alice', 'Bob', 'Charlie'],
             'Age': [25, 30, 35],
