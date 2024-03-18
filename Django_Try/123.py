@@ -28,7 +28,7 @@ def pandas_kill_first_colom():
     # Удаление первого столбца
     df = df.drop(df.columns[0], axis=1)
     print(df)#dsls;l#sfsfs
-pandas_kill_first_colom()
+pandas_kill_first_colom()#SFS
 def kilas():#aslsl#sskskks
     import pandas as pd
 #askfkk
