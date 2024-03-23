@@ -1,7 +1,7 @@
 
 
 
-class body:
+class body:#класс определяет, у него есть хп и функция вызова
  hp = 30
  def __init__(self):
   pass
