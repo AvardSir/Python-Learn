@@ -1,4 +1,4 @@
-
+print(12%8)
 
 
 class body:#класс определяет, у него есть хп и функция вызова#класс определяет, у него есть хп и функция вызова
@@ -8,8 +8,7 @@ class body:#класс определяет, у него есть хп и фун
   #self.hp = 30
 
  def hand_up(self):
-  print('hend up!')
-  print(self.hp)
+  pass
 
 a=body()
 a.hand_up()
