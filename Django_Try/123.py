@@ -40,6 +40,6 @@ colored_edges = [(0, 1), (2, 3)]  # Рёбра, которые нужно пок
 visualize_grid_graph(graph, M, colored_edges)
 
 
-matix2X=create_grid_graph2(2,1,3)
+matix2X=create_grid_graph2(2,1,3)#afssf
 short_from_to(matix2X)
 visualize_grid_graph(matix2X, 2,colored_edges)#
