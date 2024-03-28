@@ -37,7 +37,7 @@ M = 2  # Размер квадратной решетки
 colored_edges = [(0, 1), (2, 3)]  # Рёбра, которые нужно покрасить в другой цвет
 
 # Визуализация квадратной решетки с определенными цветами для рёбер
-visualize_grid_graph(graph, M, colored_edges)
+visualize_grid_graph(graph, M, colored_edges)#sffsfs
 
 
 matix2X=create_grid_graph2(2,1,3)#afssf
