@@ -1,45 +1,12 @@
-import networkx as nx
-import matplotlib.pyplot as plt
-
-# Функция для визуализации квадратной решетки с определенными цветами для рёбер
-def visualize_grid_graph(graph, M, colored_edges):
-    G = nx.Graph()  # Создание пустого графа с помощью библиотеки NetworkX
-
-    # Добавление вершин в граф
-    for V in range(M * 2):
-        G.add_node(V)
-
-    # Добавление рёбер в граф на основе матрицы смежности
-    for i in range(len(graph)):
-        for j in range(len(graph[i])):
-            if graph[i][j] != 0:
-                if (i, j) or (j, i) in colored_edges in colored_edges:
-                    # Если ребро нужно0  покрасить в другой цвет
-                    G.add_edge(i, j, color='red')
-                else:
-                    G.add_edge(i, j, color='black')
-
-    # Задание позиций вершин для визуализации
-    pos = {V: (V % M, V // M) for V in range(M * 2)}
-
-    # Раскраска определенных рёбер
-    edge_colors = [G[u][v]['color'] if 'color' in G[u][v] else 'black' for u, v in G.edges()]
-
-    # Визуализация графа с раскрашенными рёбрами
-    plt.figure(figsize=(8, 8))
-    nx.draw(G, pos, with_labels=True, node_size=700, node_color='purple', font_size=10, font_weight='bold',
-            edge_color=edge_colors, arrows=False, font_color='white')
-    plt.title('Правильная квадратная решетка с определенными цветами для рёбер')
-    plt.show()
-
-# Пример матрицы смежности для квадратной решетки с определенными цветами для рёбер#asff
-M = 2  # Размер квадратной решетки№
-colored_edges = [(0, 1), (2, 3)]  # Рёбра, которые нужно покрасить в другой цвет
-
-# Визуализация квадратной решетки с определенными цветами для рёбер№224
-visualize_grid_graph(graph, M, colored_edges)#sffsfs
+sev_zap_bez_ogr=25*3+5*5+15*7+5*10+10*5+15*7#410
+met_fog=25*3+5*4+15*5+10*3+5*7+20*5#335
 
 
-matix2X=create_grid_graph2(2,1,3)#afssf
-short_from_to(matix2X)
-visualize_grid_graph(matix2X, 2,colored_edges)#
+sev_zap_bez_ogr2=25*3+5*5+5*7+10*5+10*3+15*7+10*5#370
+
+sev_zap_bez_ogr3=25*3+5*4+5*7+10*5+10*3+15*5+10*7#355
+
+sev_zap_bez_ogr4=25*3+5*4+15*5+10*3+5*7+20*5#335
+
+sev_zap_OGRAN=10*3+12*5+8*4+10*7+12*6+13*5+3*7+8*5+14*7
+print(sev_zap_OGRAN)
