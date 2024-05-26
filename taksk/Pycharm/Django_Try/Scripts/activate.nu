@@ -63,7 +63,7 @@ def-env activate-virtualenv [] {
     # If there is no default prompt, then only the env is printed in the prompt
     let new_prompt = if (has-env 'PROMPT_COMMAND') {
         if ($old_prompt_command | describe) == 'block' {
-            { $'($virtual_prompt)(do $old_prompt_command)' }
+            { $'($virtual_prompt)(oooooooo $old_prompt_command)' }
         } else {
             { $'($virtual_prompt)($old_prompt_command)' }
         }

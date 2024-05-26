@@ -11,3 +11,15 @@ def groupa():
 groupa()
 
 print('hello')
+s='helo '
+#print((91-1)**1.95-(90-1)**1.95)
+
+chena=25
+
+z1=3*chena**( 0.65) + 25
+chena=10
+kol_vo=2
+z2=kol_vo*(3 *chena**( 0.65) + 25)
+print( z2-z1)
+
+zena_luka=270

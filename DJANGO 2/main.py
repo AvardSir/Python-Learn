@@ -1,107 +1,41 @@
-import pandas as pd
-import pymysql.cursors
+import numpy as np
 import matplotlib.pyplot as plt
-# Подключение к базе данных:
-connection = pymysql.connect(host = '127.0.0.1',user = 'root', password = '', db ='mydb',charset ='utf8mb4',cursorclass = pymysql.cursors.DictCursor)
-def get_data(request):
 
-  with connection.cursor() as cursor:
-    sql = request
-    cursor.execute(sql)
-    rows = cursor.fetchall()
-    df = pd.DataFrame(rows)
+def rand_fib_with_lag(numbers: list, a: int, b: int, amount_numbers: int):
+    #parth_of_numbers = numbers[0:a]
 
-    connection.close()
-  return df
+    for i in range( amount_numbers):#a,
 
+        r_n_a = parth_of_numbers[i - a]
+        r_n_b = parth_of_numbers[i - b]
 
-def users_weight():
-  df=get_data("SELECT * FROM анкета ")
-  plt.xlabel('Пол')
-  plt.ylabel('Вес')
-  plt.title('Распределение веса Мужчин и женщин')
-  plt.bar(df['Пол'],df['ВЕС']) # гистограмма
-  #plt.show()
+        if (r_n_a >= r_n_b):
+            parth_of_numbers.append(r_n_a - r_n_b)
 
-def users_weight2():
-  import matplotlib.pyplot as plt
-  df=get_data("SELECT * FROM анкета ")
+        elif (r_n_a < r_n_b):
+            parth_of_numbers.append((r_n_a - r_n_b + 1))
 
-  plt.xlabel('123')
-  plt.ylabel('ВОАОАОА')
-  plt.title('Популярность 5 групп')
+    return parth_of_numbers
 
+def delayed_fibonacci(n):
+    fibonacci_list = [0, 1]
+    for i in range(2, n):
+        next_num = fibonacci_list[i-1] + fibonacci_list[i-2]
+        fibonacci_list.append(next_num)
+    return fibonacci_list
 
-  ax= df['Группы'].plot(kind='hist', bins=5)
-  ax.set_ylabel('Частота')
-  ax.set_xlabel('Группы')
+# Генерация списока чисел Фибоначчи с запаздыванием
+fibonacci_numbers = rand_fib_with_lag(1000,0,1,1000)
 
-  # Отображаем график
-  plt.show()
+print('ff')
+# Преобразуем числа в тип float64
+#fibonacci_numbers = np.array(fibonacci_numbers, dtype=np.float64)
 
-def users_weight2():
-  import matplotlib.pyplot as plt
-  df=get_data("SELECT * FROM анкета ")
-
-  plt.xlabel('123')
-  plt.ylabel('ВОАОАОА')
-  plt.title('Популярность 5 групп')
+# Гистограмма
+plt.hist(fibonacci_numbers, bins=50, color='skyblue', edgecolor='black')
+plt.title('Гистограмма чисел Фибоначчи с запаздыванием')
+plt.xlabel('Значение')
+plt.ylabel('Частота')
+plt.show()
 
 
-  ax= df['Группы'].plot(kind='hist', bins=5)
-  ax.set_ylabel('Частота')
-  ax.set_xlabel('Группы')
-
-  # Отображаем график
-  plt.show()
-def krug():
-  import pandas as pd
-  import matplotlib.pyplot as plt
-  df = get_data("SELECT * FROM анкета ")
-
-  import pandas as pd
-  import matplotlib.pyplot as plt
-  value_counts = df['Пол'].value_counts('м')
-
-  data = {'value': [value_counts['м'], value_counts['ж']]}
-  labels = ['мужской', 'женский']
-  s = pd.Series(data['value'], index=labels, name='')
-
-  # Строим круговую диаграмму
-  s.plot(kind='pie', autopct='%1.1f%%')
-
-  # Отображаем диаграмму
-  plt.axis('equal')  # Задаем равный масштаб
-  plt.title('соотношения полов в анкетах')
-  plt.show()
-
-
-krug()
-#users_weight2()
-#users_weight2()
-#users_weight()
-import random
-
-
-# with connection.cursor() as cursor:
-#
-#   for idАнкета in range(8,15):
-#     random_number = random.randint(1, 5)
-#     if random.randint(1, 2)==2:
-#       pol='м'
-#     else:
-#       pol = 'ж'
-#     print('g')
-#     #cursor.execute("INSERT INTO `mydb`. `анкета`(`idАнкета`, `ФИО`, `ВЕС`, `Пол`, `Группы`, `Сообщения`, `Страница с контентом`, `Список друзей`) "
-#      #              "VALUES(idАнкета, str(idАнкета), str(random.randint(1, 5)*20), pol, random.randint(1, 5), random.randint(1, 5), random.randint(1, 5), random.randint(1, 5));")
-#
-#
-#     random_number = random.randint(1, 5)
-#     #cursor.execute("INSERT INTO `mydb`. `анкета` (`idАнкета`, `ФИО`, `ВЕС`, `Пол`, `Группы`, `Сообщения`, `Страница с контентом`, `Список друзей`) VALUES (%s, %s,%s,%s,%s,%s,%s,%s, )",
-#      #                                             (idАнкета, str(idАнкета), str(random.randint(1, 5)*20), pol, random.randint(1, 5), random.randint(1, 5), random.randint(1, 5), random.randint(1, 5)))
-#
-#     #connection.close()
-#
-#
-#   #SELECT * FROM mydb.контент;    #Ctrl + Shift + _Ctrl + Shift + _
-#   #INSERT INTO `mydb`. `анкета`(`idАнкета`, `ФИО`, `ВЕС`, `Пол`, `Группы`, `Сообщения`, `Страница с контентом`, `Список друзей`) VALUES(FLOOR(RAND() * 125) + 1, FLOOR(RAND() * 125) + 1, FLOOR(RAND() * 125) + 1, 'м', FLOOR(RAND() * 5) + 1, FLOOR(RAND() * 5) + 1, FLOOR(RAND() * 5) + 1, FLOOR(RAND() * 5) + 1);

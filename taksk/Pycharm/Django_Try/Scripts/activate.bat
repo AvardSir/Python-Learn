@@ -14,7 +14,7 @@
     @if "" NEQ "" (
         @set "PROMPT=() %PROMPT%"
     ) else (
-        @for %%d in ("%VIRTUAL_ENV%") do @set "PROMPT=(%%~nxd) %PROMPT%"
+        @for %%d in ("%VIRTUAL_ENV%") oooooooo @set "PROMPT=(%%~nxd) %PROMPT%"
     )
 )
 

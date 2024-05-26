@@ -1,46 +1,38 @@
-import sys
-from PyQt5.QtWidgets import QApplication, QMainWindow, QPushButton
-from PyQt5.QtGui import QColor, QPalette
+def resource_allocation(resource_table):
+    num_participants = len(resource_table)
 
-class Window(QMainWindow):
-    def __init__(self):
-        super().__init__()
+    num_resources = len(resource_table[0])
 
-        self.setWindowTitle("Change Color")
-        self.setGeometry(100, 100, 300, 200)
+    dp = [[0] * (num_resources + 1) for _ in range(num_participants + 1)]
 
-        self.button1 = QPushButton("Левый", self)
-        self.button1.setGeometry(50, 50, 100, 50)
-        self.button1.clicked.connect(self.change_color1)
+    for i in range(1, num_participants + 1):
+        for j in range(1, num_resources + 1):
+            max_val = 0
+            for k in range(j):
+                max_val = max(max_val, dp[i-1][j-k-1] + sum(resource_table[i-1][:k]))
 
-        self.button2 = QPushButton("Правый", self)
-        self.button2.setGeometry(150, 50, 100, 50)
-        self.button2.clicked.connect(self.change_color2)
-        #self.button2.clicked.connect(self.change_color3)
+            dp[i][j] = max_val
 
-        self.button3 = QPushButton("нижни", self)
-        self.button3.setGeometry(150, 100, 100, 50)
-        self.button3.clicked.connect(self.change_color3)
+    return dp[num_participants][num_resources],dp
+
+# Пример данных
+
+import numpy as np
 
 
-        self.default_palette = self.palette()
-
-    def change_color1(self):
-        palette = self.palette()
-        palette.setColor(QPalette.Window, QColor("red"))
-        self.setPalette(palette)
-
-    def change_color3(self):
-        palette = self.palette()
-        palette.setColor(QPalette.Window, QColor("green"))
-        self.setPalette(palette)
-    def change_color2(self):
-        palette = self.palette()
-        palette.setColor(QPalette.Window, QColor("white"))
-        self.setPalette(palette)
-
-
-app = QApplication(sys.argv)
-window = Window()
-window.show()
-sys.exit(app.exec())
+resource_table =(
+[[0.50,0.3,0.80,1.20],
+[0.60,0.5,0.90,1.30],
+[0.70,0.7,1.00,1.40],
+[0.80,0.9,1.10,1.50],
+[0.80,1.10,1.20,1.50],
+[0.90,1.20,1.30,1.60],
+[0.90,1.30,1.40,1.60],
+[1.00,1.40,1.50,1.70],
+[1.00,1.50,1.60,1.70]]
+)
+max_profit,dp = resource_allocation(resource_table)
+dp=np.array(dp)
+for i in range(len(dp)):
+    print(f'sum {i} {sum(dp[i])}')
+print(f"Максимальная прибыль: {round(max_profit,2)}")
