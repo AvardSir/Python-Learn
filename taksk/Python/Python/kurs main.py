@@ -199,7 +199,7 @@ class DatabaseApp(QWidget):
             user='root',
             password='',
             database='марк_3'
-        )
+        ) 
 
         query_groups = """
         SELECT 
