@@ -50,16 +50,36 @@ def TwoIntegerSum():
                     prevMap[n] = i
 
 
-strs = ["act", "pots", "tops", "cat", "stop", "hat"]
-def to_str( s: str):
-    countS = {}
-    for i in range(len(s)):
-        countS[s[i]] = 1 + countS.get(s[i], 0)
-    return countS
-answer=[]
-for i in strs:
-    answer.append(to_str(i))
-print(answer)
+def stuff():
 
-for i in range(len(strs)):
-    
+    strs = ["act", "pots", "tops", "cat", "stop", "hat"]
+    def to_str( s: str):
+        countS = {}
+        for i in range(len(s)):
+            countS[s[i]] = 1 + countS.get(s[i], 0)
+        return countS
+    answer=[]
+    for i in strs:
+        answer.append(to_str(i))
+    print(answer)
+
+
+    it_done={}
+    for i in range(len(strs)):
+        if i not in it_done:
+            it_done[i]=i#у нас тут словарь
+
+print('hellp')
+
+
+class hero:
+
+    def __init__(self, name, hp,atack):
+        self.name = name
+        self.hp = hp
+        self.atack = atack
+
+
+
+    def display_info(self):
+        print(f"Name: {self.name}  Age: {self.age}")
